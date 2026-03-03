@@ -38,3 +38,29 @@ titre.textContent = "Full Body";
 desc.textContent = "Circuit complet 15 minutes.";
 }
 }
+
+const imageExo = document.getElementById("imageExo");
+const videoSource = document.getElementById("videoSource");
+
+if (exo === "pompes") {
+    titre.textContent = "Pompes Genoux";
+    desc.textContent = "3 séries de 8-10 répétitions.";
+    imageExo.src = "images/pompes.jpg";
+    videoSource.src = "videos/pompes.mp4";
+}
+
+if (exo === "squats") {
+    titre.textContent = "Squats";
+    desc.textContent = "3 séries de 15 répétitions.";
+    imageExo.src = "images/squats.jpg";
+    videoSource.src = "videos/squats.mp4";
+}
+
+if (exo === "dips") {
+    titre.textContent = "Dips sur chaise";
+    desc.textContent = "3 séries de 8 répétitions.";
+    imageExo.src = "images/dips.jpg";
+    videoSource.src = "videos/dips.mp4";
+}
+document.getElementById("videoExo").load();
+
